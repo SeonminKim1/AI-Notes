@@ -1,0 +1,27 @@
+conda info --envs (설치된 가상환경 리스트 확인)
+
+1. anaconda 설치
+2. conda update -n base conda
+3. conda update --all
+
+4. (관리자로 실행)conda create -n seonmin 
+conda env list
+conda env remove -n snowdeer_env
+
+5. activate seonmin  / deactivate seonmin
+6. pip install tensorflow
+7. pip install keras 
+8. tensorboard --logdir=./path/logs/
+9. 홈페이지에 접속
+
+10. 기본 envs 관리 루트 C:\Users\urse\Anaconda3\envs
+관련 링크 
+(1) https://copycoding.tistory.com/88 -> tensorboard 설치
+(2) https://snowdeer.github.io/python/2018/01/01/make-env-of-anaconda/ -> 콘다 명령어
+(3) https://pythonkim.tistory.com/39 -> 텐서보드 사용법
+
+관련오류
+[1] python 없다고 하면 -> anaconda 환경변수 등록하면됨 . 
+[2] tensorflow tutorial examples이 안돌아 갈때 -> tensorflow 2.0 에는 examples파일이 있긴 한데 download시 같이 되지가 않음 따라서 1.14.0으로 수정하여야 함. conda 환경 지웠다가 다시 셋팅
+
+
