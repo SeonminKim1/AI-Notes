@@ -16,7 +16,7 @@
 ![오차역전파2](img/오차역전파2.png)
 
 ### ■ 역전파 알고리즘의 한계
-- 역전파 알고리즘은 가장 보편적으로 쓰이는 알고리즘임에도 한계를 지니고 있다. 경사 감소법의 한계에서 오는 것인데, 경사 감소법 알고리즘은 항상 전역 최소값 global minimum을 찾는다고 보장할 수 없다. 극소값이 두개 이상 존재하는 함수에 대해 가장 작은 최소값을 찾는다고 할 수 없다. 알고리즘이 단순히 기울기가 작아지는 방향으로 움직이는 것이기 때문에, 시작점에 따라 결과가 달라질수 있다.
+역전파 알고리즘은 가장 보편적으로 쓰이는 알고리즘임에도 한계를 지니고 있다. 경사 감소법의 한계에서 오는 것인데, 경사 감소법 알고리즘은 항상 전역 최소값 global minimum을 찾는다고 보장할 수 없다. 극소값이 두개 이상 존재하는 함수에 대해 가장 작은 최소값을 찾는다고 할 수 없다. 알고리즘이 단순히 기울기가 작아지는 방향으로 움직이는 것이기 때문에, 시작점에 따라 결과가 달라질수 있다.
 
 ![오차역전파3](img/오차역전파3.PNG)
 
@@ -64,10 +64,18 @@
 - 기울기 소멸문제는 은닉층이 많은 신경망에서 입력층에 가까운 층의 오차함수 E의 gradient가 영벡터(zero vector)에 가까워 지면서 발생함. -> 학습이 제대로 이루어지지 않게 되고 RELU와 같은 함수 선택
 - 이는 활성화 함수인 시그모이드 함수 때문에 (시그모이드 함수는 미분하면 최대치가 0.3임, 1보다 작으니까 계속 곱하다 보니 0에 가까워 져버림) 가중치를 수정하기가 어려워지고 다른 활성화 함수를 대체하게 됨.
 
-![gradient_vanishing](img/gradient_vanishing.png)
+### ■ 오차역전파 미분 계산법
+
+![미분계산](img/미분계산.PNG)
+
+![backpropagation](img/backpropagation.PNG)
+
+![backpropagation2](img/backpropagation2.PNG)
 
 
-### 출처
+### 참고문헌
+
 - https://excelsior-cjh.tistory.com/171
 - https://goofcode.github.io/back-propagation#:~:text=%EC%97%AD%EC%A0%84%ED%8C%8C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%98%20%ED%95%9C%EA%B3%84&text=%EA%B7%B9%EC%86%8C%EA%B0%92%EC%9D%B4%20%EB%91%90%EA%B0%9C%20%EC%9D%B4%EC%83%81%20%EC%A1%B4%EC%9E%AC,%EA%B2%B0%EA%B3%BC%EA%B0%80%20%EB%8B%AC%EB%9D%BC%EC%A7%88%EC%88%98%20%EC%9E%88%EB%8B%A4.
 - https://ratsgo.github.io/deep%20learning/2017/05/14/backprop/
+- https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=169 // 1강
