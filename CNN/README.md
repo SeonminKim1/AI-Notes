@@ -51,6 +51,7 @@
 - k개의 컨볼루션 필터를 적용하면 k개의 2차원 특징지도 생성 (2차원 피쳐맵이란건 물론 컬러는 3차원이지만, 좀더 큰 개념으로 봤을 때 가로세로 있는 이미지니까 2차원이란 것-컬러값들은 그냥 다 한가지 점으로 표현되고 ㅇㅇ)
 
 ### ■ Stride
+- **연산 줄이기 위함이 목적**
 - stride는 매번 이동하게 되는 픽셀수이고, 스트라이드가 1인 경우 거의 동일한 크기의 이미지를 생성하며, 2인 경우 절반 크기의 이미지를 생성한다.
 
 ![stride](img/stride.PNG)
@@ -85,6 +86,8 @@
  
 ![maxpooling](img/maxpooling.png)
 
+### ■ Convolution과 Maxpooling을 구조의 뜻
+- -> 더 넓은 범위를 보기 위해서임 ( 작게 보다가, Convolution 으로 주변 픽셀 끌어오고 결국에는 더 크게 본다는 것, 더 넓은 범위를 케어하겠다는것)
 
 
 <hr>
@@ -109,6 +112,14 @@
     <tr><td>Image Detection</td><td>RCNN / Fast RCNN / Faster RCNN / SPP Net / Yolo / SDD / Attention Net</td></tr>
     <tr><td>Semantic Segmentation</td><td>FCN / DeepLab v1, v2 / U-Net / ReSeg </td></tr>
 </table>
+
+### ■ 임펄스(Impulse), 합성곱
+
+![lti](img/lti.png)
+
+- LTI 시스템(합성곱원리) : Input을 넣었을 때 Output이 나오는 원리를 알면 LTI 시스템을 이해가능
+
+![합성곱](img/합성곱.png)
 
 
 ### ■ 참고 문헌
