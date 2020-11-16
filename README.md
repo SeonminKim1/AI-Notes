@@ -1,2 +1,3 @@
-# DL_Directory
-딥러닝 공부내용
+# DeepLearning_Summary
+
+딥러닝 이론, 
