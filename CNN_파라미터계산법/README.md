@@ -1,3 +1,14 @@
+## ■ 파라미터 계산법
+- 파라미터 구하는 공식
+- **=> 입력채널 x 필터폭 x 필터 높이 x 출력 채널수 + bias**
+    - model.add(layers.Conv2D(5, (3,3), padding='same', input_shape=(39,31,1))) 해석
+    - -> 1x5x3x3 + bias(5) = 50
+- model.add(layers.Conv2D(7, (3,3), padding='same'))
+    - -> 5x7x3x3 + bias(7) = 322
+- model.add(layers.Conv2D(9, (3,3), padding='same'))
+    - -> 7x9x3x3 + bias(9) = 576
+
+
 ## ■ 출력 크기 계산
 
 ![출력크기](img/출력크기.PNG)
