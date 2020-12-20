@@ -17,6 +17,11 @@
 - Standardization은 표준화라고 하며, Standard Scaler 또는 z-score normalization을 의미함. 기존 데이터를 평균 0 표준편차 1인 표준분포의 꼴 데이터로 만드는 것을 의미
 
 ## Batch Normalization
+- Batch normalization 이름처럼 mini-batch마다 각 층의 input을 normalization하는 방법으로 해결한다는 것
+- Batch normalization을 사용하면 initialization을 크게 신경쓰지 않아도 됨
+- optimizer의 learning rate를 이전보다 더 높일 수 있어, 더 빠른 학습을 가능
+- Batch normalization 논문에서 저자는 (BN + GoogleNet)이 Inception(GoogleNet) 보다 훨씬 더 빠르게 학습
+- 또한 batch normalization은 regularization 역할도 하기 때문에 Dropout을 사용하지 않아도 학습이 잘 되는 특성이 존재
 - 모든 Batch 간에 Normalization을 적용함 (각 배치간에 연산한다는 점이 중요!!)
 - 평균과 분산을 동일하게 함
 
