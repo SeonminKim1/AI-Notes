@@ -18,6 +18,7 @@
 - Pytorch_AutoEncoder_Denoising.ipynb
 
 ### Pytorch RNN
+- Pytorch_RNN_Basic.ipynb
 
 ### 참고문헌
 - https://github.com/keon/3-min-pytorch // 3분 딥러닝 - 파이토치맛 github
