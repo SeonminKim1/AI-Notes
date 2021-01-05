@@ -1,6 +1,18 @@
 ■ 4대 인공지능 유명 학자 
 - 제프리 힌튼 딥러닝 / 레이 커즈와일 / 얀 르쿤 박사 / 앤드류 응
 
+■ pip vs pip3 vs anaconda
+- (1) 일반 터미널에서의 pip 비교
+  - 일반 cmd의 python pip (해당 python 에서 관리하는 전역 pip)
+  - 일반 cmd의 python pip2, pip3 (local내에 pip2 버전에서 들어가지게 됨)
+  
+- (2) anaconda 가상환경 내에서 에서의 pip 비교
+  - pip : 가상환경 안에 / pip2, pip3 : 로컬 전역에
+
+- (3) conda install vs pip install 
+  - conda install, pip install 모두 동일 / 속도적인 차이 있는 경우 있음
+
+
 ■ bias란
 - 해당 뉴런이 본질적으로 가지고 있는 값
 
