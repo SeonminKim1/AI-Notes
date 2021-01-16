@@ -13,6 +13,7 @@
 - YOLO V2, 9000
 - YOOLO V3
 - YOLO V4, V5
+- Retina Net
 
 ### Object Recognition vs Detection vs Tracking
 - Object Detection
@@ -29,6 +30,7 @@
 
 ## SOTA (계속 수정.. 21.01.16)
 - https://github.com/ifzhang/FairMOT // Object Tracking Sota
+- https://mickael-k.tistory.com/48?category=798521 // 
 
   ### 참고문헌
   - https://darkpgmr.tistory.com/136 // 다크프로그래머 - Detection, tracking, Recognition의 차이
