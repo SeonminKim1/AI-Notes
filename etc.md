@@ -1,6 +1,10 @@
 ■ 4대 인공지능 유명 학자 
 - 제프리 힌튼 딥러닝 / 레이 커즈와일 / 얀 르쿤 박사 / 앤드류 응
 
+■ 듀얼부팅 (파티션 분할 및 win10 + ubuntu)
+- https://jimnong.tistory.com/676
+- http://blog.dalli.kr/archives/1414 
+
 ■ pip vs pip3 vs anaconda
 - (1) 일반 터미널에서의 pip 비교
   - 일반 cmd의 python pip (해당 python 에서 관리하는 전역 pip)
