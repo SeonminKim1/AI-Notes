@@ -7,23 +7,30 @@
   - 경사하강법
   - 오차역전파
   - 활성화함수
-  - Tensorflow 2.0연습
-- CNN
-  - CNN이란
-  - CNN_Model (Lenet부터 ~ DenseNet까지)
-  - CNN_파라미터계산법
 
-- Advanced CNN
-  - Object_Detection
-
-- GAN
-  - GAN_Model
-  
-- 문제해결기법
+- Problem & Solution
   - Overfitting
   - BatchNormalization
   - Data Augmentation
-  
-- 기타
+  - Imbalanced_Data_Problem
+
+- Framework
+  - Tensorflow 2.0연습
+  - Pytorch
+
+- CNN
+  - CNN이란
+  - CNN_파라미터계산법
+  - Multi-Labeling
+
+- Other DL
+  - XAI
+  - GAN_Model
+  - lightweight-optimized-dl
+    
+- etc
   - 참고문헌
   - ANACONDA 정리
+  - Dataset.md
+  - etc.md
+
