@@ -1,0 +1,18 @@
+1. 해당 홈페이지에서 Tensorflow 버전, CUDNN, CUDA 설치 
+- https://www.tensorflow.org/install/source_windows?hl=en#gpu
+
+2. CUDA, CUDNN 한 폴더에 밀어놓고
+
+3. Tensorflow는 GPU 쓸꺼면 Tensorflow-gpu를 까는 것임
+
+4. 확인 명령어
+import tensorflow as tf
+from tensorflow.python.client import device_lib
+
+print(device_lib.list_local_devices())
+print(tf.__version__)
+
+tf.test.is_gpu_available(
+    cuda_only=False,
+    min_cuda_compute_capability=None
+)
